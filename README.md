@@ -1,4 +1,4 @@
-## Clase 1/09  
+## Clase 1/9  
 Creamos un index.html  
 Instalamos extencion HtmlHint (logo rojito)  
 Cliente - Servidor  
@@ -14,3 +14,11 @@ HTML es el elemento raíz.
 El archivo index.html no debe faltar en ningún sitio web.
 ### Atributos
 Son propiedades que se les añaden a las etiquetas html.
+## Clase 2/9 
+Nav es un elemento semántico.  
+Creamos una carpeta htmlLayout. Con el atajo ! (shift + 1) nos aparecen las opciones rápidas para crear una estructura html en nuestro archivo.  
+Vemos estructura básica de un body: header, main y footer.  
+Con Alt+Shift+f podemos formatear nuestro archivo, queda más ordenado.  
+El elemento img es una etiqueta sin cierre (elemento void) a diferencia de las otras.  
+Solo puede haber 1 solo por página: h1, main.  
+Para agregar un mapa a nuestro sitio web, ir a maps, seleccionar compartir lugar, incorporar un mapa, seleccionamos tamaño pequeño o el que se quiera, y copiamos el iframe en nuestro archivo.
