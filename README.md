@@ -22,3 +22,27 @@ Con Alt+Shift+f podemos formatear nuestro archivo, queda más ordenado.
 El elemento img es una etiqueta sin cierre (elemento void) a diferencia de las otras.  
 Solo puede haber 1 solo por página: h1, main.  
 Para agregar un mapa a nuestro sitio web, ir a maps, seleccionar compartir lugar, incorporar un mapa, seleccionamos tamaño pequeño o el que se quiera, y copiamos el iframe en nuestro archivo.
+## Clase 8 septiembre
+para agregar un icono a la pestaña se puede con un favicon de 64px, agregando esto en el head:  
+ ```html 
+ <link rel="icon" type="image/x-icon" href="ice-cream.png">
+ ```  
+ Se puede buscar en flaticon, boxicon, etc.  
+ El picture está bueno porque tien la opcion de añadir el elemento source, con el que podemos cambiar la imagen mostrada dependiendo del tamaño del dispositivo del usuario.  
+ ### Creamos un Form
+ ```html
+ <form method="post" action="./contacto.html">
+                <label for="id-nombre">Nombre</label>
+                <input type="text" name="nombre" id="id-nombre">
+
+                <label for="id-email">Email</label>
+                <input type="email" name="email" id="id-email">
+
+                <label for="id-mensaje">Mensaje</label>
+                <textarea name="mensaje" id="id-mensaje"></textarea>
+                
+                <!-- también funciona <input type="submit" value=""> -->
+                <button type="submit">Enviar</button>
+            </form>
+ ```  
+ Es importante el id del input para replicarlo en el label, así cuando le damos click nos redirijira al input correspondiente.  
