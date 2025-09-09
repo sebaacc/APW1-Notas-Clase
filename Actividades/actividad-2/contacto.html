@@ -11,8 +11,10 @@
 <body>
     <header>
         <picture>
-            <source media="(min-width: 600)" srcset="./recursos/imagenes/cb-logo.svg">
-            <img src="./recursos/imagenes/cb-logo.svg" alt="Logo Casa blanca" style="width: 48px;">
+            <a href="./index.html">
+                <source media="(min-width: 600)" srcset="./recursos/imagenes/cb-logo.svg">
+                <img src="./recursos/imagenes/cb-logo.svg" alt="Logo Casa blanca" style="width: 48px;">
+            </a>
         </picture>
         <ul>
             <a href="./index.html">
@@ -35,12 +37,30 @@
             </picture>
         </section>
         <section>
-            <h1>Inmobiliaria Casa Blanca</h1>
-            <h3>Bienvenido a Casa Blanca, una inmobiliaria comprometida con ayudarte a encontrar el hogar de tus sueños.
-                Somos un equipo apasionado por conectar a las personas con espacios que se adaptan a sus necesidades, ya
-                sea para vivir, invertir o emprender. Creemos que cada propiedad tiene una historia y nuestro objetivo
-                es acompañarte en cada paso del proceso para que la tuya comience de la mejor manera.
-            </h3>
+            <h1>Contacto</h1>
+        </section>
+        <section>
+            <form action="contacto.html" method="post">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="id-nombre">
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" name="telefono" id="id-telefono">
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="id-email">
+
+                <label for="tipologia">Tipología</label>
+                <select name="tipologia" id="id-tipologia">
+                    <option value="casa">Casa</option>
+                    <option value="departamento">Departamento</option>
+                    <option value="ph">PH</option>
+                </select>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="id-mensaje"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
     <footer>
@@ -49,8 +69,10 @@
             <p>Tel: 11111111</p>
         </section>
         <section>
-            <img src="./recursos/imagenes/ig.svg" alt="Instagram">
-            <p>@casa.blanca</p>
+            <a href="https://www.instagram.com/casa.blanca">
+                <img src="./recursos/imagenes/ig.svg" alt="Instagram">
+                <p>@casa.blanca</p>
+            </a>
         </section>
     </footer>
 </body>
