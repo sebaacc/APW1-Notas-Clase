@@ -46,3 +46,13 @@ para agregar un icono a la pestaña se puede con un favicon de 64px, agregando e
             </form>
  ```  
  Es importante el id del input para replicarlo en el label, así cuando le damos click nos redirijira al input correspondiente.  
+
+ ## Clase 15 septiembre
+Creamos otra pagina, y creamos el nuevo archivo CSS con el nombre index.css, también puede ser style o global. Lo vinculamos desde el Head mediante una etiqueta Link, nos aparece la opcion link:css, esa seleccionamos y cambiamso la ruta del archivo css.  
+### Reglas CSS
+Selector: es el nombre del elemento que se quiere modificar o estilizar. Existen los de *Tipo*, los de *Clase*, y los de *ID*.  
+Entre las llaves van las instrucciones de como se quiere modificar.  
+.selector de clase {}  
+Para incorporar el selector de clase agregar en el elemento el atributo class = .  
+### Especificidad
+Es el concepto de que hay selectores en css con más peso que otros, por ejemplo un selector de clase es más importante que un selector común cuando entre ambos apuntan al mismo elemento html. El selector de tipo ID es el más pesado de todos.  
