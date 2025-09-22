@@ -3,6 +3,7 @@
 }
 body{
     background-color: aliceblue;
+    height: 1500px;
 }
 
 .cabecera-principal{
@@ -14,4 +15,10 @@ body{
 
 .cabecera-principal .logo{
     width: 40px;
+}
+
+.tel-fijo {
+    position: fixed; /*Esto es relativo al ViewPort*/
+    bottom: 20px;
+    right: 20px;
 }
