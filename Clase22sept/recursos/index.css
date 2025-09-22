@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: aliceblue;
+}
+
+.cabecera-principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;/* esto es para que esten centrados verticalmente en sus cajas*/
+    flex-direction: column;
+}
+
+.cabecera-principal .logo{
+    width: 40px;
+}
