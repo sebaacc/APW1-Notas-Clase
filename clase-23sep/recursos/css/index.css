@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "Noto";
+    src: url(/recursos/css/fonts/Noto-Variable.ttf);
+}
+*{
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: "Noto";
+}
+
+body { /*Esto es para resetear todos los bordes del body*/
+    margin: 0;
+    padding: 0;
+}
+.cabecera-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: antiquewhite;
+    padding: 10px 20px;
+
+    position: sticky;   
+    top: 0;
+}
+ul {
+    list-style: none;
+}
+.cabecera-principal .logo {
+    width: 120px;
+}
+
+.pie-principal .whatsapp-pie {
+    width: 60px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+main {
+    height: 1500px;
+}
+
+/*Media queries */
+@media (width > 640px){
+    .cabecera-principal{
+        height: 100px;
+    }
+}
+
+@media (width > 1024px){
+    .cabecera-principal{
+        background-color: brown;
+    }
+}
