@@ -81,4 +81,22 @@ console.log(nombrecompleto);
 
 // console.log(1 === "1", 1 == "1"); //compara tipo, compara solo contenido 
 
+// Funciones
+// Parámetro => variable necesaria que se declara en la función para utilizarla en su bloque o cuerpo. 
+// Argumento => dato que se le pasa a una función al emplearla, ya con un valor definido.
+
+function iterar(veces) {
+    let cantidad = 0
+    for (let i = 1; i < veces; i++) {
+        if (i == 1) console.log(`${i} vez`)
+        else console.log(`${i} veces`)
+        cantidad++
+    }
+    return cantidad
+}
+
+//invocamos la función y le pasamos un ARGUMENTO.
+let resultado = iterar(23) 
+console.log(`Cantidad: ${resultado}`);
+
 
