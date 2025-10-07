@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="recursos/css/index.css">
+        <link rel="shortcut icon" href="recursos/imagenes/favicon.svg"
+            type="image/x-icon">
+        <title>Helados 21 de Septiembre - Pedidos</title>
+    </head>
+    <body>
+        <header class="cabecera-principal">
+             <a href="./index.html">
+                <img src="recursos/imagenes/logo-21s.svg" alt="Logo Heladeria 21 de Septiembre">
+            </a>
+            <nav>
+                <a href="./">
+                    Inicio
+                </a>
+                <a href="./pedidos.html">
+                    Pedidos
+                </a>
+            </nav>
+        </header>
+        <main class="contenido-principal">
+            <img class="imagen-hero" src="recursos/imagenes/hero-pedidos.webp"
+                alt="tDos helados en cucurucho">
+            <section class="seccion-pedidos">
+                <h1>Pedido</h1>
+                <p class="parrafo-principal">
+                    Hacenos tu pedido!
+                    (Solo para retiros en el local y potes de 1/4, 1/2 y 1 kg.)
+                </p>
+                <form class="formulario-pedidos" action="pedidos.html"
+                    method="post">
+                    <label for="id-nombre">
+                        Nombre
+                    </label>
+                    <input type="text" name="nombre" id="id-nombre" required />
+                    <label for="id-telefono">
+                        Telefono
+                    </label>
+                    <input type="tel" name="telefono" id="id-telefono" required />
+                    <label for="id-peso">
+                        Peso
+                    </label>
+                   <select name="peso" id="id-peso" required>
+                        <option value="" >Seleccione peso</option>
+                        <option value="1/4">1/4 kg</option>
+                        <option value="1/2">1/2 kg</option>
+                        <option value="1">1 kg</option>
+                    </select>
+                    <label for="id-gustos">
+                        Gustos
+                    </label>
+                   <select name="gustos" id="id-gustos" required>
+                       <option value="" >Seleccione gusto</option>
+                       <option value="CV">Chocolate/Vainilla</option>
+                       <option value="VF">Vainilla/Frutilla</option>
+                       <option value="DC">Dulce de leche/Chocolate</option>
+                       <option value="DV">Dulce de leche/Vainilla</option>
+                   </select>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </main>
+        <footer class="pie-principal">
+            <ul>
+                <li>21S 2025</li>
+                <li>heladeria21s@mail.com</li>
+                <li>
+                    <a target="_nueva"
+                        href="https://instagram.com/heladeria21s">
+                        <img src="./recursos/imagenes/ig.svg" alt="logo instagram">
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>
