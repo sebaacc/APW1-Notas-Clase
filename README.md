@@ -56,3 +56,23 @@ Entre las llaves van las instrucciones de como se quiere modificar.
 Para incorporar el selector de clase agregar en el elemento el atributo class = .  
 ### Especificidad
 Es el concepto de que hay selectores en css con más peso que otros, por ejemplo un selector de clase es más importante que un selector común cuando entre ambos apuntan al mismo elemento html. El selector de tipo ID es el más pesado de todos.  
+
+## Clase 13 Octubre
+
+funciones normales y funciones de flecha:  
+
+```javascript
+function suma(a,b) {
+    return a + b
+}
+const suma = (a,b) => {
+    return a + b
+}
+
+const suma = (a,b) => a + b //esto es para un return IMPLÍCITO
+const mensaje = (m) => m
+//o también con un solo parámetro de esta manera:
+const mensaje = m => m
+
+console.log(suma(10,15))
+```
