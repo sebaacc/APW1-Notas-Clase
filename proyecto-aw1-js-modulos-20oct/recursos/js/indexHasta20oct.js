@@ -78,7 +78,7 @@ function renderizarProductos(arreglo) {
 }
 
 
-renderizarProductos()
+export {renderizarProductos}
 
 
 

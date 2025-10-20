@@ -85,4 +85,21 @@ se puede acceder al dom con **document**. Tiene métodos, como getElementByID().
 ### Módulos
 Para poder usar modulos, con distintos archivos js o data en otros js, cambiar el defer por type modules en el head del HTML. type="module"  
 
-Detalle no menor: añadir extensión .js cuando se importa un módulo js.
+Detalle no menor: añadir extensión .js cuando se importa un módulo js.  
+
+Tipos de exportación desde el js. Cuando se exporta sin nombre o por default, en el archivo donde se invoca puede llamarse de cualquier manera, pero de la otra forma nombrada no.  
+```js
+//export
+//forma nombrada:
+//agregar un export a la izquierda de la función, o al final del archivo con export {funcion} así
+export {funcion}
+
+//no nombrada
+export default nombrefuncion
+
+//Formas de importar: ------------------------------------------
+
+import productos from "./productos.js"; // de forma no nombrada
+
+// import {productos} from "./productos.js"; de forma nombrada
+```
