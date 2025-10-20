@@ -76,3 +76,13 @@ const mensaje = m => m
 
 console.log(suma(10,15))
 ```
+
+## Clase 20 Octubre
+
+El Dom es la representación del sitio en javascript.  
+Se puede ver mediante el inspector de elementos.  
+se puede acceder al dom con **document**. Tiene métodos, como getElementByID(). Que es una forma de referenciar un elemento html desde JS.  
+### Módulos
+Para poder usar modulos, con distintos archivos js o data en otros js, cambiar el defer por type modules en el head del HTML. type="module"  
+
+Detalle no menor: añadir extensión .js cuando se importa un módulo js.
