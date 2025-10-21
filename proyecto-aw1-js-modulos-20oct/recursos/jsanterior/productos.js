@@ -16,9 +16,6 @@ const productos = [
 ]
 
 //Exportacion no nombrada
-export default productos
+//export default productos
 //Exportacion nombrada
 export {productos}
-
-const saludo = "hola módulo"
-export {saludo}
