@@ -29,6 +29,7 @@ function renderizadoInmuebles(contenedor, inmuebles) {
     contenedor.innerHTML = HTML
 }
 
+
 export {
     renderizadoInmuebles
 }
