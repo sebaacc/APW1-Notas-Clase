@@ -1,0 +1,206 @@
+/* Fuentes */
+@font-face {
+    font-family: 'Noto';
+    src: url(fonts/Noto-Variable.ttf);
+}
+
+/* Modelo de caja alternativo */
+* {
+    box-sizing: border-box;
+}
+
+/* Resetar margenes */
+body,
+h1,
+h2,
+p,
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+Raíz definir:
+*/
+:root {
+    font-family: Noto, sans-serif;
+    font-size: 18px;
+    line-height: 1.8rem;
+    color: #333;
+}
+
+/* estilos */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.cabecera-principal {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 10%;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(30px);
+    z-index: 10;
+}
+
+.cabecera-principal > a.ancla-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 35px;
+    color: #333;
+}
+.cabecera-principal > a.ancla-logo > img {
+    display: flex;
+    align-items: center;
+    width: 50px;
+    margin: 0;
+}
+.cabecera-principal nav {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecera-principal nav a {
+    text-decoration: none;
+    color: #333;
+}
+/******************/
+.contenido-principal {
+    flex-grow: 1;
+    padding-bottom: 10%;
+}
+
+.contenido-principal section.hero {
+    position: relative;
+}
+.contenido-principal section.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+.contenido-principal section.hero .imagen-hero {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.contenido-principal .grupo-secciones {
+    padding: 5% 10%;
+}
+
+.contenido-principal .parrafo-principal {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 20px;
+    color: #505050;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+.catalogo h2 {
+    text-align: center;
+    padding-block: 20px 50px;
+}
+.catalogo__contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.catalogo-inmueble {
+    background: #eee;
+    padding: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.catalogo-inmueble img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+.catalogo-inmueble ul {
+    list-style: none;
+    padding: 0;
+}
+.catalogo-inmueble button {
+    padding: 10px;
+    border: none;
+    font-size: inherit;
+    color: #fff;
+    background-color: #505050;
+    cursor: pointer;
+}
+
+.catalogo-inmueble button:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    background-color: #434343;
+}
+.pie-principal {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.pie-principal ul {
+    list-style: none;
+    text-align: center;
+}
+
+.formulario-pedidos {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.formulario-pedidos input,
+.formulario-pedidos select {
+    padding: 5px 10px;
+    font-size: inherit;
+    font-family: inherit;
+    margin-bottom: 15px;
+}
+
+.formulario-pedidos button {
+    padding: 10px;
+    margin: 15px 0;
+    font-size: inherit;
+}
+
+.popup-consultas {
+    position: fixed;
+    width: 80%;
+    max-width: 500px;
+    top: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+    z-index: 20;
+}
+.popup-consultas form {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup-consultas .form-cerrar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.popup-consultas .form-cerrar button {
+    grid-column: 4 / 5;
+    padding: 4px;
+    background-color: transparent;
+    color: #333;
+    border: none;
+    text-align: right;
+    cursor: pointer;
+}

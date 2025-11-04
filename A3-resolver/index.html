@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="recursos/css/index.css"
+        />
+        <link
+            rel="shortcut icon"
+            href="recursos/imagenes/favicon.svg"
+            type="image/x-icon"
+        />
+        <script
+            type="module"
+            src="./recursos/js/index.js"
+        ></script>
+        <title>X Inmuebles</title>
+    </head>
+
+    <body>
+        <header class="cabecera-principal">
+            <a
+                class="ancla-logo"
+                href="./"
+            >
+                <img
+                    src="recursos/imagenes/logo.svg"
+                    alt="Logo Inmobiliaria X"
+                />
+            </a>
+            <nav>
+                <a href="./"> Inicio </a>
+            </nav>
+        </header>
+        <main class="contenido-principal">
+            <section class="hero">
+                <h1>Bienvenidos</h1>
+
+                <img
+                    class="imagen-hero"
+                    src="recursos/imagenes/casa-hero.jpg"
+                    alt="Potes con gustos de helados"
+                />
+            </section>
+            <div class="grupo-secciones">
+                <section class="seccion-index">
+                    <p
+                        id="parrafo"
+                        class="parrafo-principal"
+                    >
+                        Descubre espacios diseñados para tu vida. Conectamos
+                        personas y lugares con propósito, acompañándote en cada
+                        paso. Hacemos simple encontrar tu hogar ideal o invertir
+                        con confianza. Bienvenido a tu nuevo comienzo.
+                    </p>
+                </section>
+                <section class="catalogo">
+                    <h2>Inmuebles</h2>
+                    <div
+                        id="contenedor"
+                        class="catalogo__contenedor"
+                    >
+                        <!-- renderizar los inmuebles -->
+                        <!-- plantilla -->
+                        <!-- 
+                        
+                        <article class="catalogo-inmueble">
+                            <img
+                                src="./recursos/items/depto-2.jpg"
+                                alt="Departamento 1"
+                            />
+                            <h3>Departamento1</h3>
+                            <ul>
+                                <li>Operación: Alquiler</li>
+                                <li>Precio: $ 1000</li>
+                            </ul>
+                            <button
+                                class="boton-consulta"
+                                data-codigo="D01"
+                            >
+                                Consultar
+                            </button>
+                        </article> 
+                        
+                        -->
+                        <!-- fin plantilla -->
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="pie-principal">
+            <ul>
+                <li>X Inmuebles 2025</li>
+                <li>consultas@xinmuebles.com</li>
+                <li>
+                    <a
+                        target="_nueva"
+                        href="https://instagram.com/xinmuebles"
+                    >
+                        <img
+                            src="./recursos/imagenes/ig.svg"
+                            alt="logo instagram"
+                        />
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        <dialog id="popup-consultas" class="popup-consultas">
+            <form class="form-cerrar" method="dialog">
+                <button type="submit">Cerrar</button>
+            </form>
+            <form id="form-whatsapp">
+                <h2>Consulta por el inmueble</h2>
+                <label for="mensaje">Mensaje:</label>
+                <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    rows="4"
+                    required
+                ></textarea>
+                <div class="acciones-dialogo">
+                    <button
+                        type="submit"
+                        class="boton-enviar"
+                    >
+                        Enviar
+                    </button>
+                </div>
+            </form>
+            <script>
+                const $formulario = document.getElementById('form-whatsapp');
+
+                $formulario.addEventListener('submit', (evento) => {
+                    evento.preventDefault();
+                    const mensaje = encodeURIComponent(
+                        $formulario.mensaje.value
+                    );
+                    // Cambiar por el numero
+                    const telws = '111111111111';
+
+                    const url = `https://wa.me/${telws}?text=${mensaje}`;
+                    window.open(url, '_nuevo');
+                });
+            </script>
+        </dialog>
+    </body>
+</html>
