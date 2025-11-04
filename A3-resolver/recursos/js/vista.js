@@ -1,27 +1,34 @@
 // Funciones renderizado
 
-function renderizadoInmueble(contenedor) {
+function renderizadoInmuebles(contenedor, inmuebles) {
+    let HTML = ``
 
-    contenedor.innerHTML = ` 
+    inmuebles.forEach(inmueble => {
+    let plantilla = `
         <article class="catalogo-inmueble">
             <img
-                src="./recursos/items/depto-2.jpg"
-                alt="Departamento 1"
+                src=${inmueble.imagen.src}
+                alt=${inmueble.imagen.alt}
             />
-            <h3>Departamento1</h3>
+            <h3>${inmueble.nombre}</h3>
             <ul>
-                <li>Operación: Alquiler</li>
-                <li>Precio: $ 1000</li>
+                <li>Operación: ${inmueble.operacion.etiqueta}</li>
+                <li>Precio: $ ${inmueble.precio}</li>
             </ul>
             <button
                 class="boton-consulta"
-                data-codigo="D01"
+                data-codigo=${inmueble.codigo}
             >
                 Consultar
             </button>
-        </article> `
+        </article> 
+    `
+    HTML += plantilla
+    });
+
+    contenedor.innerHTML = HTML
 }
 
 export {
-    renderizadoInmueble
+    renderizadoInmuebles
 }
