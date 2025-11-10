@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./recursos/imagenes/favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./recursos/css/base.css">
+    <script type="module" src="./recursos/js/index.js"></script>
+    <title>Gadget Club | Contacto</title>
+</head>
+
+<body>
+    <header class="encabezado-principal">
+        <div>
+            <a href="/" aria-label="logo ir al inicio">
+                <img src="
+                ./recursos/imagenes/logo.svg" alt="Logo Gadget Club" />
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="./contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contenido-principal consultas">
+        <header class="hero">
+            <h1>Escribinos!</h1>
+        </header>
+        <section class="contacto" aria-labelledby="contacto">
+            <header class="cuerpo-cabecera">
+                <h2 class="titulo" id="contacto">
+                    Contacto
+                </h2>
+                <p>¿Tienes alguna pregunta? ¡Contáctanos!</p>
+            </header>
+            <form class="formulario" action="contacto.html" method="post">
+                <label for="id-nombre">Nombre</label>
+                <input name="nombre" id="id-nombre" type="text" minlength="3" placeholder="Tu nombre" required />
+                <label for="id-email">Email</label>
+                <input name="email" id="id-email" type="email" placeholder="tu@email.com" required />
+                <label for="id-mensaje">Mensaje</label>
+                <textarea name="mensaje" id="id-mensaje" placeholder="Tu mensaje aquí" required></textarea>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+    <footer class="pie-principal">
+        <ul>
+            <li>GADGET CLUB - 2024</li>
+            <li>
+                <a target="_nuevo" href="https://wa.me/+000000000">
+                    <img src="./recursos/imagenes/ws.svg" alt="Logo whatsapp" />
+                    whatsapp
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>

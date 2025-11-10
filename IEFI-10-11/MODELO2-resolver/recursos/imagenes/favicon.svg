@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="387.40295"
+   height="387.40295"
+   viewBox="0 0 387.40295 387.40295"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient5">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop5" />
+      <stop
+         style="stop-color:#00aad1;stop-opacity:1;"
+         offset="1"
+         id="stop6" />
+    </linearGradient>
+    <linearGradient
+       xlink:href="#linearGradient5"
+       id="linearGradient7"
+       gradientUnits="userSpaceOnUse"
+       x1="910.06445"
+       y1="763.35547"
+       x2="690.27997"
+       y2="763.35468" />
+  </defs>
+  <g
+     id="g1"
+     transform="translate(0,-607.12409)">
+    <circle
+       style="fill:#00333f;fill-opacity:1;stroke:none;stroke-width:2"
+       id="path7"
+       cx="193.70148"
+       cy="800.82556"
+       r="193.70148" />
+    <g
+       id="g7"
+       transform="translate(-609.05143,15.419023)">
+      <path
+         id="path1"
+         d="m 764.07331,763.35469 c 0,-19.93734 16.16267,-36.1 36.09867,-36.1 19.93733,0 36.09867,16.16266 36.09867,36.1 0,19.936 -16.16134,36.09866 -36.09867,36.09866 -19.936,0 -36.09867,-16.16266 -36.09867,-36.09866 z m 36.09867,-109.892 c -60.69067,0 -109.892,49.2 -109.892,109.892 0,60.69066 49.20133,109.89199 109.892,109.89199 v 61.87867 c 0,0 109.892,-39.12533 109.892,-171.77066 0,-60.692 -49.20133,-109.892 -109.892,-109.892"
+         style="fill:url(#linearGradient7);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.133333" />
+      <path
+         id="path6"
+         style="fill:#0094ba;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.133333"
+         d="m 800.17188,653.46289 c -0.0288,0 -0.0571,0.002 -0.0859,0.002 v 73.79297 c 0.029,-7e-5 0.0569,-0.004 0.0859,-0.004 19.93732,0 36.0996,16.16422 36.0996,36.10156 0,19.936 -16.16227,36.09765 -36.0996,36.09765 -0.029,0 -0.057,-0.004 -0.0859,-0.004 v 73.79492 c 0.0288,2e-5 0.0571,0.002 0.0859,0.002 V 935.125 c 0,0 109.89257,-39.1242 109.89257,-171.76953 0,-60.692 -49.2019,-109.89258 -109.89257,-109.89258 z" />
+    </g>
+  </g>
+</svg>
