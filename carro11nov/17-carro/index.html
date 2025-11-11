@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="recursos/css/index.css">
+        <link rel="shortcut icon" href="recursos/imagenes/favicon.svg"
+            type="image/x-icon">
+        <title>Helados 21 de Septiembre</title>
+        <script type="module" src="./recursos/js/index.js"></script>
+    </head>
+    <body>
+        <header class="cabecera-principal">
+            <a href="./index.html">
+                <img src="recursos/imagenes/logo-21s.svg" alt="Logo Heladeria 21 de Septiembre">
+            </a>
+            <nav>
+                <a href="./">
+                    Inicio
+                </a>
+                <a href="./pedidos.html">
+                    Pedidos
+                </a>
+                <button id="btn-carro-compras">
+                    <img src="./recursos/imagenes/carro.svg" alt="Icono carro compras">
+                </button>
+            </nav>
+        </header>
+        <main class="contenido-principal">
+            <img class="imagen-hero" src="recursos/imagenes/hero-inicio.webp"
+                alt="Potes con gustos de helados">
+            <section class="seccion-index">
+                <h1>Bienvenidos</h1>
+                <p class="parrafo-principal">
+                    ¡Bienvenidos a Heladería 21 de Septiembre! Disfrutá de nuestros deliciosos helados artesanales, preparados con ingredientes frescos y de alta calidad. Vení a visitarnos y endulzá tu día con nuestros sabores únicos y cremosos. ¡Te esperamos!
+                </p>
+                <h2>Catalogo</h2>
+                <div id="contenedor">
+                    <!-- <article>
+                        <img src="./..." alt="">
+                        <h3>Nombre</h3>
+                        <ul>
+                            <li>
+                                $ 2000
+                            </li>
+                        </ul>
+                        <button data-id="">Agregar al carro</button>
+                    </article> -->
+                </div>
+            </section>
+        </main>
+        <footer class="pie-principal">
+            <ul>
+                <li>21S 2025</li>
+                <li>heladeria21s@mail.com</li>
+                <li>
+                    <a target="_nueva"
+                        href="https://instagram.com/heladeria21s">
+                        <img src="./recursos/imagenes/ig.svg"
+                            alt="logo instagram">
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        <dialog id="popup-carro-compras" class="popup-carro-compras">
+            <h2>Carro de Compras</h2>
+            <div id="contenedor-carro-compras">
+                <p>No hay productos en el carro de compras.</p>
+            </div>
+            <form method="dialog">
+                <button type="submit">Cerrar</button>
+            </form>
+        </dialog>
+    </body>
+</html>
